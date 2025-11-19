@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <title>Login</title>
+    <head>
+        <link id="theme-style" rel="stylesheet" href="styles/white-theme.css" />
+    </head>
+    <body>
+        <div class="main-content" style="display: flex; justify-content: center; align-items: center; height: 100vh; width: 190%;">
+            <div style="text-align: center;">
+                <label class="liquid-glass-label"> Login to panel.</label>
+                <div class="block-2" style="margin-top: 50px; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    <label class="liquid-glass-label" style="height: 20px;">▂ ▄ ▅ ▆ ▇ █ Email █ ▇ ▆ ▅ ▄ ▂ </label>
+                    <input id="input_mail" class="liquid-glass-input" type="email" placeholder="your@email.com" style="width: 295px;" required/>
+                    <label class="liquid-glass-label" style="height: 20px;">▂ ▄ ▅ ▆ ▇   Key  ▇ ▆ ▅ ▄ ▂</label>
+                    <input id="input_pass" class="liquid-glass-input" type="password" placeholder="a1b2-c3d4-e5f6-g7h8" style="width: 295px;" required/>
+                    <button id="loginBt" class="liquid-glass-button" style="width: 250px;">Enter</button>
+                    <button id="theme-toggle-button" class="theme-change-bt" style="margin-right: 250px; margin-top: 25px;">🌙</button>
+                </div>
+                <label id="successMessage" class="liquid-glass-label" style="color: rgb(0, 255, 0); display: none;"> Success</label>
+                <label id="errorMessage" class="liquid-glass-label" style="color: rgb(255, 0, 0); display: none;"> Error</label>
+            </div>
+        </div>
+    </body>
+    <script src="scripts/login_page.js"></script>
+</html>
+

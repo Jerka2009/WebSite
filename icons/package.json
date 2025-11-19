@@ -1,0 +1,81 @@
+{
+  "name": "@mynaui/icons",
+  "version": "0.3.9",
+  "description": "1180+ beautifully crafted open source icons for your next project.",
+  "keywords": [
+    "mynaui",
+    "icons",
+    "svg",
+    "font",
+    "sprite",
+    "woff",
+    "woff2",
+    "icon-font",
+    "svg-sprite",
+    "icon-library",
+    "icon-pack",
+    "icon-set"
+  ],
+  "homepage": "https://mynaui.com/icons",
+  "bugs": {
+    "url": "https://github.com/praveenjuge/mynaui-icons/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praveenjuge/mynaui-icons.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/praveenjuge"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Praveen Juge",
+    "url": "https://praveenjuge.com/"
+  },
+  "sideEffects": false,
+  "exports": {
+    "./*": [
+      "./icons/*"
+    ]
+  },
+  "style": "mynaui.css",
+  "files": [
+    "icons/*.svg",
+    "icons-solid/*.svg",
+    "meta.json",
+    "mynaui.css",
+    "mynaui.eot",
+    "mynaui.json",
+    "mynaui.less",
+    "mynaui.module.less",
+    "mynaui.scss",
+    "mynaui.styl",
+    "mynaui.svg",
+    "mynaui.symbol.svg",
+    "mynaui.ttf",
+    "mynaui.woff",
+    "mynaui.woff2",
+    "mynaui-solid.css",
+    "mynaui-solid.eot",
+    "mynaui-solid.json",
+    "mynaui-solid.less",
+    "mynaui-solid.module.less",
+    "mynaui-solid.scss",
+    "mynaui-solid.styl",
+    "mynaui-solid.svg",
+    "mynaui-solid.symbol.svg",
+    "mynaui-solid.ttf",
+    "mynaui-solid.woff",
+    "mynaui-solid.woff2",
+    "LICENSE",
+    "README.md",
+    "package.json",
+    "!.DS_Store"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "99b2511886a19adf0be608816150549d1afa2636",
+  "sass": "mynaui.scss"
+}
