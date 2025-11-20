@@ -17,6 +17,7 @@ function handleHashChange() {
 }
 // Buttons
 const themeToggleButton = document.getElementById('theme-toggle-button');
+const logoutButton = document.getElementById('logoutBt');
 const currentKeyButton = document.getElementById("currentKey");
 const currentEmailLabel = document.getElementById("currentEmail");
 const currentIdLabel = document.getElementById("currentId");
@@ -91,4 +92,11 @@ currentKeyButton.addEventListener('click',() => {
 });
 themeToggleButton.addEventListener('click', () => {
     toggleTheme();
+});
+logoutButton.addEventListener('click', () => {
+    localStorage.removeItem('accessKey');
+    localStorage.removeItem('mail');
+    localStorage.removeItem('mailC');
+    localStorage.removeItem('id');
+    window.location.href = 'login.html';
 });
