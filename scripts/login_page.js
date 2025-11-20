@@ -33,9 +33,9 @@ function loginUser(email, password) {
 
             // Admin login
             if (email === 'admin@admin.com' && password === '5O7k-0154-9o9o-8g86') {
-                resolve({ success: true, message: 'Вход выполнен успешно!' });
+                resolve({ success: true, message: 'Success log in!' });
             } else {
-                resolve({ success: false, message: 'Неверный email или пароль' });
+                resolve({ success: false, message: 'Incorrect email or key!' });
             }
         }, 1500);
     });
