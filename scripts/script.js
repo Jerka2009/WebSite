@@ -46,7 +46,7 @@ function changeTheme(theme) {
     localStorage.setItem('theme', theme);
 }
 window.addEventListener("load", (event) => {
-  console.log("page is fully loaded");
+  console.log("page is fully loaded - main");
   const key = localStorage.getItem('accessKey') || 'none';
   const mailL = localStorage.getItem('mail') || 'none';
   const mailC = localStorage.getItem('mailC') || null;

@@ -98,6 +98,15 @@ function changeTheme(theme) {
     localStorage.setItem('theme', theme);
 }
 
+window.addEventListener("load", (event) => {
+  console.log("page is fully loaded - login");
+  const key = localStorage.getItem('accessKey') || 'none';
+
+    if (key !== 'none') {
+        alert("Kay is found!");
+        window.location.href = 'index.html#home';
+    }
+});
 window.addEventListener('DOMContentLoaded', () => {
     const st = localStorage.getItem('theme') || 'white';
     changeTheme(st);
