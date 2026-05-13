@@ -46,7 +46,7 @@ function changeTheme(theme) {
     
     localStorage.setItem('theme', theme);
 }
-window.addEventListener("load", (event) => {
+/*window.addEventListener("load", (event) => {
   console.log("page is fully loaded - main");
   const key = localStorage.getItem('accessKey') || 'none';
   const mailL = localStorage.getItem('mail') || 'none';
@@ -66,7 +66,7 @@ window.addEventListener("load", (event) => {
         }
         currentEmailLabel.textContent = "Email: " + s + mailL;
     }
-});
+});*/
 window.addEventListener('hashchange', handleHashChange);
 window.addEventListener('DOMContentLoaded', () => {
         handleHashChange();
@@ -98,5 +98,6 @@ logoutButton.addEventListener('click', () => {
     localStorage.removeItem('mail');
     localStorage.removeItem('mailC');
     localStorage.removeItem('id');
+    localStorage.removeItem('authToken');
     window.location.href = 'login.html';
 });
