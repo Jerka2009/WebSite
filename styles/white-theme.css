@@ -94,7 +94,7 @@ a, a:hover, a:active, a:visited {
     margin-top: 10px;
     margin-left: 10px;
     gap: 15px;
-}
+  }
 .liquid-glass {
   background: rgba(255, 255, 255, 0.25); 
   backdrop-filter: blur(10px) saturate(180%); 
@@ -167,7 +167,7 @@ a, a:hover, a:active, a:visited {
   box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.15), 
               inset 0 1px 0 rgba(255, 255, 255, 0.3); 
   padding: 15px; 
-  color: #000000; 
+  color: #000000;
   font-family: VK-Sans-Medium;
   transition-duration: 0.5s;
 }

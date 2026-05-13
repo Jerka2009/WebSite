@@ -45,8 +45,8 @@ function validateEmail(email) {
 }
 
 function showError(message) {
-     errorMessage.textContent = message;
-     errorMessage.style.display = 'block';
+    errorMessage.textContent = message;
+    errorMessage.style.display = 'block';
     successMessage.style.display = 'none';
 }
 
@@ -77,19 +77,19 @@ async function loginUser(email, licenseKey) {
                 token: response.token,
                 user: response.user
             };
-            } else {
+        } else {
             return { 
                 success: false, 
                 message: response.message || 'Incorrect email or key!' 
             };
-            }
+        }
     } catch (error) {
         console.error('Login error:', error);
         return { 
             success: false, 
             message: 'Connection error. Please try again.' 
         };
-}
+    }
 }
 
 // Обновленный обработчик входа
@@ -138,7 +138,7 @@ loginButton.addEventListener('click', async () => {
                 localStorage.setItem('mailC', email.length);
             }
             
-                localStorage.setItem('id', adminID);
+            localStorage.setItem('id', adminID);
 
             // Перенаправляем на главную страницу после задержки
             setTimeout(() => {
@@ -229,14 +229,14 @@ function changeTheme(theme) {
 
 // Обработчики событий загрузки страницы
 window.addEventListener("load", async (event) => {
-  console.log("page is fully loaded - login");
+    console.log("page is fully loaded - login");
     
     const token = localStorage.getItem('authToken');
     if (token) {
         const isAuthenticated = await checkAuth();
         if (isAuthenticated) {
             console.log("User is authenticated, redirecting...");
-        window.location.href = 'index.html#home';
+            window.location.href = 'index.html#home';
         }
     }
 });
