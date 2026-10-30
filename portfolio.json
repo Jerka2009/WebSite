@@ -1,0 +1,10 @@
+{
+  "title": "Control panel [Liquid glass]",
+  "description": "Сайт разработан как концепт, до окнца не доделан. Сайт показывает стиль жидкого стекла при тёмной и светлой темах.",
+  "images": [
+    "assets/portfolio/screenshot-1.png",
+    "assets/portfolio/screenshot-2.png"
+  ],
+  "demo": "None",
+  "github": "https://github.com/Jerka2009/WebSite"
+}
